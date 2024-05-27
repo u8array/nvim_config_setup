@@ -31,6 +31,13 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "nvim-telescope/telescope-project.nvim",
+    requires = { {'nvim-telescope/telescope.nvim'} },
+    config = function() 
+      require'telescope'.load_extension('project') 
+    end,
+  },
   
   {
   	"williamboman/mason.nvim",
@@ -41,7 +48,6 @@ return {
   		},
   	},
   },
-  
   {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {

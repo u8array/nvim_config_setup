@@ -15,14 +15,6 @@ return {
   },
   {
     "rust-lang/rust.vim",
-    config = function()
-      vim.cmd [[
-        " Enable Rust file type plugin (ftplugin).
-        let g:rust_enabled = 1
-        " Enable Rust syntax highlighting.
-        let g:rust_syntax_enabled = 1
-      ]]
-    end,
   },
   {
     "neovim/nvim-lspconfig",
@@ -37,6 +29,9 @@ return {
     config = function() 
       require'telescope'.load_extension('project') 
     end,
+  },
+  {
+    "github/copilot.vim",
   },
   
   {
